@@ -20,22 +20,22 @@ const list = ['ooo', 'aaa', [1, 2, 3], 'ttt'];
 
 localStorageService.inputListToLocalStorage('one', list);
 
-console.log(localStorageService.getFromLocalStorageByKey('one'));
+console.log(localStorageService.getListFromLocalStorageByKey('one'));
 
 
 const list2 = [8, 'lll', 'oooo', 5, { a: 'aaa', b: 'bbb' }];
 
 localStorageService.inputListToLocalStorage('two', list2);
 
-console.log(localStorageService.getFromLocalStorageByKey('two'));
+console.log(localStorageService.getListFromLocalStorageByKey('two'));
 
 localStorageService.inputElementToLocalStorageByKey('one', 26);
 
-console.log(localStorageService.getFromLocalStorageByKey('one'));
+console.log(localStorageService.getListFromLocalStorageByKey('one'));
 
 localStorageService.inputListToLocalStorage('two', list);
 
 localStorageService.inputListToLocalStorage('one', list2);
 localStorageService.inputElementToLocalStorageByKey('one', 26);
 
-localStorageService.delitListByKey('two');
+// localStorageService.delitListFromLocalStorageByKey('two');
