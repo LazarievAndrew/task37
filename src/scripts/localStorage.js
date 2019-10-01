@@ -1,5 +1,5 @@
 import inputListToStorage from './inputListToStorage';
-import inputElementToStorageByKey from './inputElementToStorageByKey';
+import inputElementToListInStorageByKey from './inputElementToListInStorageByKey';
 import getListFromStorageByKey from './getListFromStorageByKey';
 import getElementFromStorageByKeyAndID from './getElementFromStorageByKeyAndID';
 import deleteElementFromStorageByKeyAndID from './deleteElementFromStorageByKeyAndID';
@@ -10,7 +10,7 @@ export default class localStorageService {
     }
 
     static inputElementToLocalStorageByKey(key, value) {
-        inputElementToStorageByKey(key, value);
+        inputElementToListInStorageByKey(key, value);
     }
 
     static getListFromLocalStorageByKey(key) {
